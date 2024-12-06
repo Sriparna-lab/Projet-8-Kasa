@@ -1,0 +1,12 @@
+@mixin flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@mixin font-right($size) {
+    font-size:$size;
+    font-weight: bolder;
+    text-align: right;
+    line-height:142.6%;
+}

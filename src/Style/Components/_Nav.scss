@@ -1,0 +1,16 @@
+.nav-header {
+    @include flex-end;
+ 
+    &__nav-link-home,
+    &__nav-link-about {
+      @include font-right(17px);
+      color: $primary-color;
+      text-decoration: none;
+      padding-left: 50px;
+
+      &:hover,
+      &:focus {
+        text-decoration-line: underline;
+      }
+    }
+  }
