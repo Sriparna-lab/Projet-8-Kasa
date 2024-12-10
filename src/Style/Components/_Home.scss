@@ -1,0 +1,12 @@
+.home_gallery {
+    width:auto;
+    height:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 30px;
+    margin-bottom: 40px;
+    background: #F6F6F6; 
+    padding: 50px;
+    border-radius: 10px;
+}

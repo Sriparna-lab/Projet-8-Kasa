@@ -1,0 +1,25 @@
+.errorContainer {
+    color: #FF6060;
+    Height: 500px;
+    margin: 0 22px 22px 22px;
+
+    &__Number {
+        text-align: center;
+        @include font(200px, 800);
+        margin: 0 0 1rem ;
+    }
+    &__Text {
+        text-align: center;
+        @include font(27px, 500);
+        margin: 0 11% 5% 11%;
+    }
+    &__Link {
+       color: $primary-color;
+       @include font(14px, 500);
+       margin: 2rem 0 0 35rem;
+    &:hover,
+      &:focus {
+        text-decoration-line: underline;
+      }
+    }
+}

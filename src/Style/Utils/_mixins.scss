@@ -10,3 +10,16 @@
     text-align: right;
     line-height:142.6%;
 }
+
+@mixin font($size, $weight) {
+    font-size: ($size);
+    font-style: normal;
+    font-weight: $weight;
+    line-height: 142.6%;
+}
+
+@mixin linear-gradient {
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, #00000080);
+  }
+
+ 
