@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import "./Style/app.scss";
 import Home from "./Pages/home/Home";
 import About from "./Pages/about/About";
+import Housing from "./Pages/Housing/Housing";
 import NoPage from "./Pages/Error/NoPage";
 
 
@@ -13,6 +14,7 @@ function Display() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/logement/:id" element={<Housing />} />
                     <Route path="*" element={<NoPage />} />
                 </Routes>
             </Router>

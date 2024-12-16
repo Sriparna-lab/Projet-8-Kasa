@@ -1,0 +1,82 @@
+.Fiche-container {
+    color: $primary-color;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+.housing-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+.accomodation {
+    @include flex-column;
+
+.accomodation-title {
+    @include font(36px, 500);
+    color: $secondary-color;
+  }
+
+.accomodation-location {
+    @include font(14px, 500);
+  }
+} 
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width:50%;
+}
+
+.accomodation-fiche {
+    width: 100%;
+  
+    display: flex; 
+    flex-direction: row;
+      &__description {
+          width: 50%;
+          padding-right: 40px;
+        }
+      &__equipements {
+          width: 50%;
+          padding-left: 40px;
+        } 
+}   
+    
+.accomodation-info {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+
+  &__owner {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: right;
+  &__details {
+    display: flex; 
+    flex-direction: row;
+  }
+  &__name {
+    color:$secondary-color;
+    width: 93px;
+    text-align:right;
+    @include font(18px,500);
+    margin: 11px 10px  0 0 ;
+  }
+    &__pic {
+    height: 64px;
+    width: 64px;
+    border-radius: 90px;
+  }
+  &__rate {
+    @include flex-end;
+    margin-top: 20px;
+    .star {
+      width: 36px;
+      height: 36px;
+      }
+    } 
+  }
+}

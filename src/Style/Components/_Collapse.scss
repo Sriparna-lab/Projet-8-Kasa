@@ -8,7 +8,9 @@
     width: 75%;
 
   &__title {
-    @extend %flex-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0.5em 1em;
     width: 100%;
     background: #FF6060;
@@ -28,7 +30,8 @@ h2 {
     }
   }
     &__content {
-      background-color: $secondary-color;
+      background-color:  #F6F6F673;
+      
       width: 100%;
       border-radius: 5px;
     p {

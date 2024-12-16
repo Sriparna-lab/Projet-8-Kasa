@@ -1,6 +1,5 @@
 @import "./Utils/mixins";
 @import "./Utils/variables";
-@import "./Utils/placeholders";
 @import "./Base/base";
 @import "../Style/Components/Nav";
 @import "../Style/Layout/Header";
@@ -9,4 +8,8 @@
 @import "../Style/Components/Home";
 @import "../Style/Components/Error";
 @import "../Style/Components/Collapse";
+@import "../Style/Components/Carrousel";
+@import "../Style/Components/Fiche";
+@import "../Style/Components/Tag";
+
 @import "../Style/Layout/Footer";
