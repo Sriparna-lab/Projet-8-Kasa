@@ -1,11 +1,12 @@
 import React from 'react';
-import { useParams } from "react-router-dom";
+import { useParams} from "react-router-dom";
 import Carousel from "../../Components/Accomodation/Carrousel";
 import Tag from "../../Components/Accomodation/Tag";
 import Rate from "../../Components/Accomodation/Rate";
 import Header from "../../Components/header/Header";
 import Footer from "../../Components/Footer/Footer";
 import Collapse from "../../Components/Collapse/Collapse";
+import NoPage from "../../Pages/Error/NoPage";
 import { useFetch } from "../../utils/useFetch";
 
 
@@ -14,6 +15,10 @@ const Housing = () => {
       const data = useFetch(`http://localhost:8080/api/properties`);
     
   const properties = data.find((logement) => logement.id === id);
+
+  if(properties?.length === 0){
+    return<NoPage/>
+  }
 
   const equipements = properties?.equipments.map((equipement, i) => {
     return (
