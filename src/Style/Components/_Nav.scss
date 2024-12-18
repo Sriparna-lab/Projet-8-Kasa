@@ -1,12 +1,19 @@
 .nav-header {
     @include flex-end;
- 
+    @include smartphone-responsive {
+      text-transform: uppercase;
+    }
+  
     &__nav-link-home,
     &__nav-link-about {
       @include font-right(17px);
       color: $primary-color;
       text-decoration: none;
       padding-left: 50px;
+      @include smartphone-responsive {
+        @include font-right(12px);
+        padding-left: 20px;
+      }
 
       &:hover,
       &:focus {

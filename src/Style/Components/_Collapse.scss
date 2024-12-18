@@ -4,8 +4,14 @@
   margin-top: 2px;
   justify-content: center;
   align-items: center;
+  @include smartphone-responsive {
+    margin-bottom: 12px;
+  }
   &__dropdown {
     width: 75%;
+    @include smartphone-responsive {
+      width: 100%;
+  }
 
   &__title {
     display: flex;
@@ -17,10 +23,15 @@
     margin: 0 auto;
     margin-top: 1.5em;
     border-radius: 5px;
-
-h2 {
-  color: $tertiary-color;
-  @include font(24px, 700);
+    @include smartphone-responsive {
+      margin-top: 1em; 
+    }  
+  h2 {
+    color: $tertiary-color;
+    @include font(24px, 700);
+    @include smartphone-responsive {
+      @include font(13px, 700);
+    }
     }
   p {
     color: $tertiary-color;
@@ -31,7 +42,6 @@ h2 {
   }
     &__content {
       background-color:  #F6F6F673;
-      
       width: 100%;
       border-radius: 5px;
     p {

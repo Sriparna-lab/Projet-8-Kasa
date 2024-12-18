@@ -65,4 +65,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-  }  
+  }
+  
+  @mixin smartphone-responsive {
+    @media all and (max-width: map-get($breakpoints, smartphone)) {
+        @content;
+    }
+  }

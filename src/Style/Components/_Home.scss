@@ -10,4 +10,9 @@
     background: #F6F6F6; 
     padding: 50px;
     border-radius: 10px;
+    @include smartphone-responsive {
+        grid-template-columns: repeat(1, 1fr);
+        background: none;
+        padding: 0px;
+    }
 }

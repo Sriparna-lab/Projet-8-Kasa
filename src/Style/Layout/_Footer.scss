@@ -3,20 +3,29 @@
     height: 209px;
     margin-top: 2%;
     background-color: $primary-color;
+    text-align: center;
     &__logo {
         position: relative;
         top: 30%;
-        left: 45%;  
+       
         margin-bottom: 2%;
         width: 122px;
         height: 40px;
+      
     }
     &__text-copyright {
         @include font(24px, 500);
         position: relative;
+        width: 50%;
         top: 34%;
-        left: 37%;
+        left: 25%;
         color: $tertiary-color;
-        width: 100%;
+        
+        @include smartphone-responsive {
+            @include font(12px, 500);
+            left: 37%;
+            width: 26%;
+            
+        }
     }
 }

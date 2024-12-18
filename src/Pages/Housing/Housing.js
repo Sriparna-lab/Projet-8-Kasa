@@ -16,7 +16,7 @@ const Housing = () => {
     
   const properties = data.find((logement) => logement.id === id);
 
-  if(properties?.length === 0){
+  if(!properties){
     return<NoPage/>
   }
 

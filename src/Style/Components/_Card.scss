@@ -4,7 +4,11 @@
   position: relative;
   margin-bottom: 20px;
   border-radius: 10px;
-  
+  @include smartphone-responsive {
+    height: 255px;
+    margin-bottom: 0;
+  }
+
   &_img {
     width: inherit;
     height: inherit;
@@ -31,7 +35,11 @@
     height: 100%;
     width: 100%;
     border-radius: inherit;
+    @include smartphone-responsive {
+      height: 255px;
+    }
   }
+  
     &:hover {
       > .card_img {
       transform: scale(1.01);
