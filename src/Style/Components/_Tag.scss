@@ -3,9 +3,25 @@
     background: #FF6060;
     color: $tertiary-color;
     margin-top: 1%;
-    @include font(10px, 500);
-    height: 18px;
-    border-radius: 10px;
+    @include font(14px, 700);
+    height: 25px;
+    border-radius: 12px;
     margin-right: 10px;
     padding: 2px 10px 0 10px;
+    @include smartphone-responsive {
+        @include font(10px, 700);
+        height: 18px;
+        padding: 2px 25px 0 25px;
+        margin-right: 5px;
+    }
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-top: 20px;
+    @include smartphone-responsive {
+        width: 100%;
+    }   
 }

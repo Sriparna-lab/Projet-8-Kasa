@@ -5,7 +5,9 @@
     height: 300px;
     margin: 2% 0 0  0;
     overflow: hidden;
-
+    @include smartphone-responsive {
+      height: 255px;
+    }
 }
 .slider {
   @include WH-full;
@@ -27,11 +29,7 @@
     bottom: 0%;
     mix-blend-mode: normal;
     border-radius: 10px;
-
-}
-&__number {
-  display: none;
-}
+  }
 }
 .active {
   opacity: 1;
@@ -39,10 +37,17 @@
 
 .right-Arrow {
   @include rightArrow-style;
+  @include smartphone-responsive {
+    font-size: 30px;
+    padding-right: 20px;
+  }
 }
 
 .left-Arrow {
   @include leftArrow-style;
+  @include smartphone-responsive {
+    font-size: 30px;
+  }
 }
 
 .photocount {
@@ -52,4 +57,7 @@
   bottom: 6%;
   right: 50%;
   margin: 0;
+  @include smartphone-responsive {
+    display: none;
+  }
 }

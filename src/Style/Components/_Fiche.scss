@@ -1,62 +1,76 @@
 .Fiche-container {
-    color: $primary-color;
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-
-.housing-page {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-.accomodation {
-    @include flex-column;
-
-.accomodation-title {
-    @include font(36px, 500);
-    color: $secondary-color;
-  }
-
-.accomodation-location {
-    @include font(14px, 500);
-  }
-} 
-
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    width:50%;
+  color: $primary-color;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
-.accomodation-fiche {
-    width: 100%;
-  
-    display: flex; 
-    flex-direction: row;
-      &__description {
-          width: 50%;
-          padding-right: 40px;
-        }
-      &__equipements {
-          width: 50%;
-          padding-left: 40px;
-        } 
-}   
-    
+.housing-page {
+  display: flex;
+  flex-direction: column;
+}
+
 .accomodation-info {
   display: flex; 
   justify-content: space-between; 
-  align-items: center;
-
-  &__owner {
+  height: 120px;
+  @include smartphone-responsive {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: right;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.accomodation {
+  &__title {
+    display: flex;
+    flex-direction: column;
+    @include font(36px, 500);
+    color: $secondary-color;
+    @include smartphone-responsive {
+      @include font(18px, 500);  
+    }
+  }
+  &__location {
+    @include font(18px, 500);
+    @include smartphone-responsive {
+      @include font(12px, 500);  
+    }
+  }
+} 
+
+.accomodation-fiche {
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+  @include smartphone-responsive {
+    flex-direction: column;
+  }
+  &__description {
+    width: 50%;
+    padding-right: 40px;
+    @include smartphone-responsive {
+      width: 100%; 
+      padding-right: 0;
+    }
+  }
+  &__equipements {
+    width: 50%;
+    padding-left: 40px;
+    @include smartphone-responsive {
+      width: 100%; 
+      padding-left: 0;
+    }
+  } 
+}   
+     
+.owner-info {
+  display: flex;
+  flex-direction: column;
   &__details {
     display: flex; 
-    flex-direction: row;
+    flex-direction: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
   }
   &__name {
     color:$secondary-color;
@@ -65,18 +79,25 @@
     @include font(18px,500);
     margin: 11px 10px  0 0 ;
   }
-    &__pic {
+  &__pic {
     height: 64px;
     width: 64px;
     border-radius: 90px;
   }
-  &__rate {
-    @include flex-end;
-    margin-top: 20px;
-    .star {
-      width: 36px;
-      height: 36px;
-      }
-    } 
-  }
 }
+
+.rate {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+  .star {
+    width: 36px;
+    height: 36px;
+    @include smartphone-responsive {
+      width: 15px;
+      height: 15px; 
+    }
+  }
+} 
+
+

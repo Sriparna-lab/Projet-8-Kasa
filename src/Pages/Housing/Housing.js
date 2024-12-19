@@ -41,33 +41,31 @@ const Housing = () => {
             <Carousel slides={properties.pictures} />
           </div>
           ): null}
-          <section className="housing-page">
-            <div className="accomodation-info">
-              <div className="accomodation">
-                <span className="accomodation-title">{properties?.title}</span>
-                <span className="acomodation-location">
-                  {properties?.location}
-                </span>
-              </div>
-            <div className="accomodation-info__owner__details">
-              <p className="accomodation-info__owner__name">{properties?.host.name}</p>
-              <img
-                className="accomodation-info__owner__pic"
-                src={properties?.host.picture}
-                alt=""
-              />
-            </div>
-          </div>
+        <section className="housing-page">
           <div className="accomodation-info">
-            <div className="tags">
-              {tags}
-            </div>
-            <div className="accomodation-info__owner">
-              <div className="accomodation-info__owner__rate">
-                <Rate score={properties?.rating} />
+            <div className="accomodation">
+              <span className="accomodation__title">{properties?.title}</span>
+              <span className="acomodation__location">
+                {properties?.location}
+              </span>
+              <div className="tags">
+                {tags}
               </div>
             </div>
+             
+            <div className="owner-info">
+              <div className="owner-info__details">
+                <p className="owner-info__name">{properties?.host.name}</p>
+                <img
+                  className="owner-info__pic"
+                  src={properties?.host.picture}
+                  alt=""
+                />
+              </div>
+              <Rate score={properties?.rating} />
+            </div>
           </div>
+
           <div className="accomodation-fiche">
             <div className="accomodation-fiche__description">
               <Collapse
@@ -83,7 +81,7 @@ const Housing = () => {
             </div>
           </div>
         </section>
-      </main>
+        </main>
       <Footer />
     </div>
   );
