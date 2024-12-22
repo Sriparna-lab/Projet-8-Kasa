@@ -35,6 +35,7 @@
     }
   p {
     color: $tertiary-color;
+   
     i {
       cursor: pointer;
       }
@@ -49,6 +50,9 @@
       color: $primary-color;
       margin: 0 auto;
       padding: 0.8em;
+      @include smartphone-responsive {
+        @include font(12px, 400);
+      }
       }
     }
   }

@@ -17,7 +17,7 @@
   top: 0%;
   bottom: 0%;
   border-radius: 10px;
-  opacity: 0;
+
 
   & img {
     @include WH-full;
@@ -27,7 +27,6 @@
     right: 0%;
     top: 0%;
     bottom: 0%;
-    mix-blend-mode: normal;
     border-radius: 10px;
   }
 }

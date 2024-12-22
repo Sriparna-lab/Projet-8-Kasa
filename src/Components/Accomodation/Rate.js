@@ -6,7 +6,7 @@ function Rate({score}) {
  
 const stars = [1, 2, 3, 4, 5];
 return (
-  <div>
+  <div className="rate"> 
     {stars.map((level) =>
       score >= level ? (
         <img

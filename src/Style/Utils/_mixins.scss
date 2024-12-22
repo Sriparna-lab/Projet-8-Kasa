@@ -6,7 +6,7 @@
 
 @mixin font-right($size) {
     font-size:$size;
-    font-weight: bolder;
+    font-weight: 500;
     text-align: right;
     line-height:142.6%;
 }
