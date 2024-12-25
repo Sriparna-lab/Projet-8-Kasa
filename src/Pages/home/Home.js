@@ -7,11 +7,18 @@ import Footer from "../../Components/Footer/Footer";
 import Card from "../../Components/Card/Card";
 import Bannerhome from "../../Assets/Banner/Bannerhome.png";
 
-
-
 // Home component
 function Home() {
-  const data = useFetch('http://localhost:8080/api/properties');
+  const { data, isLoading, error } = useFetch('http://localhost:8080/api/properties');
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>Error loading data.</p>;
+  }
+
   return (
     <div>
       <Header />
@@ -37,6 +44,7 @@ function Home() {
 }
 
 export default Home;
+
 
 
 
