@@ -41,11 +41,11 @@
       }
     }
   }
-    &__content {
+
+  &__drop {
       background-color:  #F6F6F673;
       width: 100%;
       border-radius: 5px;
-    p {
       @include font(20px, 400);
       color: $primary-color;
       margin: 0 auto;
@@ -56,4 +56,5 @@
       }
     }
   }
-}
+
+

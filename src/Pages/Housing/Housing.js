@@ -15,9 +15,9 @@ const Housing = () => {
     const { id } = useParams();
     const { data: properties,  isLoading, error } = useFetch(`http://localhost:8080/api/properties/${id}`);
         
-   
+    
 
-    if (isLoading) {
+if (isLoading) {
         return <p>Loading...</p>;
     }
 
@@ -25,11 +25,13 @@ const Housing = () => {
         return <NoPage />;
     }
  
-    const equipements = properties.equipments.map((equipement, i) => (
+    const equipements = properties.equipments.map((equipement, i) => {
+        return (
         <ul key={i}>
             <li>{equipement}</li>
         </ul>
-    ));
+    );
+});
 
     const tags = properties.tags.map((tag, i) => (
         <Tag key={i} name={tag} />

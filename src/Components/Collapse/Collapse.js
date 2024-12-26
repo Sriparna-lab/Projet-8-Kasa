@@ -21,11 +21,9 @@ const Collapse = ({ title, content }) => {
           )}
         </p>
       </div>
-     
-      <div className="collapse__dropdown__content">
-        {isOpen && <p>{content}</p>}
+        {isOpen && <div className="collapse__dropdown__drop">{content}</div>}
       </div>
-    </div>
+   
   );
 };
 
