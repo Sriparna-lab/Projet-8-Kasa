@@ -21,7 +21,7 @@ if (isLoading) {
         return <p>Loading...</p>;
     }
 
-    if (error || properties == "Not found") {
+    if (error || properties === "Not found") {
         return <NoPage />;
     }
  
