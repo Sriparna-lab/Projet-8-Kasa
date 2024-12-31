@@ -10,6 +10,12 @@ Github , Node js, HTML, React, Javascript, SASS, Figma , Visual studio code
 # Prerequisites
 You need Docker to launch the app API.
 
+# Install dependencies 
+
+Run the following command to install the necessary dependencies:
+
+### `npm install`
+
 ## Launch Project
 
 With Docker run command
