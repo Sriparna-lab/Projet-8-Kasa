@@ -7,10 +7,6 @@ Kasa is an 10-years old agency specialized in the private rental. They recently 
 
 Github , Node js, HTML, React, Javascript, SASS, Figma , Visual studio code
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Prerequisites
 You need Docker to launch the app API.
 
@@ -22,6 +18,10 @@ With Docker run command
 
 To stop project run
 `docker-compose down`
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
