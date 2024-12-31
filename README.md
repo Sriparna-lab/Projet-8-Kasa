@@ -11,6 +11,24 @@ Github , Node js, HTML, React, Javascript, SASS, Figma , Visual studio code
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Prerequisites
+You need Docker to launch the app API.
+
+## Launch Project
+
+With Docker run command
+
+`docker-compose up -d`
+
+To stop project run
+`docker-compose down`
+
+## Install Dependencies
+
+Run the following command to install the necessary dependencies:
+
+## `npm install`
+
 ## Available Scripts
 
 In the project directory, you can run:
