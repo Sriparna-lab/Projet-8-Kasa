@@ -27,7 +27,7 @@ To stop project run
 
 Run the following command to install the necessary dependencies:
 
-## `npm install`
+# `npm install`
 
 ## Available Scripts
 
