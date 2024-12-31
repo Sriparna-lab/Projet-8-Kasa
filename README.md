@@ -23,12 +23,6 @@ With Docker run command
 To stop project run
 `docker-compose down`
 
-## Install Dependencies
-
-Run the following command to install the necessary dependencies:
-
-### `npm install`
-
 ## Available Scripts
 
 In the project directory, you can run:
